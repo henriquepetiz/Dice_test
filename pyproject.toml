@@ -1,7 +1,13 @@
-[project]
-name = "python-template"
-version = "0.1.0"
-description = ""
-authors = ["Your Name <you@example.com>"]
-requires-python = ">=3.11"
-dependencies = []
+import random 
+
+
+i = 0
+while i < 10:
+  a = random.randrange(1, 7)
+  b = random.randrange(1, 7)
+  print(a, b)
+  if a + b == 12:
+    print("DUPLO SEIS")
+  i = i + 1
+
+random.randrange (1, 7)

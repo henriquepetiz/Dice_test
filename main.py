@@ -1,23 +1,22 @@
+###jogo de 2 dados
+
 import random
 
-# Generate a random integer between 1 and 10
-random_int = random.randint(1, 10)
-print(f"Random integer (1-10): {random_int}")
+d1 = random.Random()
+d2 = random.Random()
 
-# Generate a random float between 0 and 1
-random_float = random.random()
-print(f"Random float (0-1): {random_float}")
 
-# Generate a random float in a specific range
-random_range = random.uniform(5.0, 10.0)
-print(f"Random float (5-10): {random_range}")
+rolls = []
+double = 0
+for i in range (10):
+  a = d1.randrange(1, 7)
+  b = d2.randrange(1, 7)
+  rolls.append ( [a,b] )
+  print(a, b)
+  if a + b == 12:
+    double = double + 1
+    print("DUPLO SEIS")
 
-# Choose a random item from a list
-colors = ['red', 'blue', 'green', 'yellow']
-random_color = random.choice(colors)
-print(f"Random color: {random_color}")
 
-# Shuffle a list
-numbers = [1, 2, 3, 4, 5]
-random.shuffle(numbers)
-print(f"Shuffled list: {numbers}")
+print(rolls)
+print(double)
