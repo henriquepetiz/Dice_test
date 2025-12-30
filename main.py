@@ -15,7 +15,7 @@ for i in range(10):
   print(a, b)
   if a + b == 12:
     double = double + 1
-    print("DUPLO SEIS")
+    print("DOUBLE SIX")
 
 print(rolls)
 print(double)
